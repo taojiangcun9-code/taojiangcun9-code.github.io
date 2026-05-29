@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>个人简历</title>
+
+  <!-- 引入css -->
+  <link rel="stylesheet" href="resume.css">
+</head>
+
+<body>
+    <!-- 左侧导航栏 -->
+  <div class="sidebar">
+    <h2>menu</menu></h2>
+
+    <a href="index.html">主页面</a>
+    <a href="about.html">关于我</a>
+    <a href="resume.html">个人简历</a>
+    <a href="project.html">项目展示</a>
+  </div>
+
+  <div class="main">
+
+  <!-- 简历页 -->
+  <section id="resume" class="resume-section">
+
+    <div class="resume-paper">
+
+      <h1 class="resume-title">个人简历</h1>
+
+      <!-- 基本信息 -->
+      <div class="resume-block">
+        <h2>基本信息</h2>
+
+        <p><strong>姓名：</strong>陶光瑞</p>
+        <p><strong>电话：</strong>15664927129</p>
+        <p><strong>邮箱：</strong>taojiangcun9@gmail.com</p>
+        <p><strong>Github：</strong>github.com/taojiangcun9-code</p>
+        <p><strong>求职方向：</strong>Java 后端开发实习生</p>
+      </div>
+
+      <!-- 教育经历 -->
+      <div class="resume-block">
+        <h2>教育经历</h2>
+
+        <p><strong>文华学院｜软件工程｜本科</strong></p>
+        <p>2023.09 - 2027.06</p>
+
+        <p class="gray">
+          主修课程：
+          数据结构与算法、计算机网络、操作系统、
+          数据库原理、Java 程序设计、软件工程
+        </p>
+      </div>
+
+      <!-- 技术能力 -->
+      <div class="resume-block">
+        <h2>技术能力</h2>
+
+        <ul>
+          <li>熟悉 Java 基础，理解集合、多线程、IO、异常处理等核心机制 </li>
+          <li>熟悉 Spring Boot、MyBatis 开发流程，能够独立完成 RESTful API 开发 </li>
+          <li>熟悉 MySQL 常用优化手段，了解索引、事务、慢查询分析</li>
+          <li>熟悉 Redis 基础使用，能够完成缓存设计与热点数据缓存</li>
+          <li>熟悉 Git 协作开发流程，能够进行分支管理与代码版本控制</li> 
+          <li>熟悉 Linux 常用命令，能够完成基础项目部署与日志排查</li>
+          <li>具备基础问题定位能力，能够通过日志、接口测试定位异常原因</li> 
+
+        </ul>
+      </div>
+
+      <!-- 项目经历 -->
+      <div class="resume-block">
+        <h2>项目经历</h2>
+
+        <h3>高并发秒杀系统</h3>
+
+        <p>2025.3-2025.5</p>
+
+        <p class="gray">
+          Spring Boot、Redis、MySQL、RabbitMQ
+        </p>
+
+        <ul>
+          <li>针对秒杀场景下大量请求直接访问数据库导致系统压力过大的问题，使用 Redis 预减库存减少数据库瞬时写压力</li>
+          <li>针对高并发下重复下单问题，基于 Redis + 用户ID 实现接口幂等校验，避免重复购买</li>
+          <li>针对请求流量突增导致系统阻塞的问题，使用 RabbitMQ 异步处理订单请求，实现流量削峰</li>
+          <li>针对数据库库存超卖问题，通过乐观锁控制库存更新，提高并发场景下的数据一致性 </li>
+          <li>使用 JMeter 对接口进行压力测试，分析接口响应时间与系统吞吐情况</li>
+        </ul>
+
+        <h3>IM 即时通讯系统</h3>
+
+        <p>2024.11-2025.1</p>
+
+        <p class="gray">
+          Spring Boot、WebSocket、Redis、MySQL
+        </p>
+
+        <ul>
+          <li>针对 HTTP 无法实现实时通信的问题，基于 WebSocket 实现即时消息推送</li>
+          <li>使用 Redis 缓存用户在线状态，减少频繁数据库查询</li>
+          <li>针对离线消息丢失问题，实现离线消息存储与用户上线后消息同步</li>
+          <li>使用心跳机制检测连接状态，提升长连接稳定性</li>
+          <li>针对聊天记录查询场景，优化消息分页加载逻辑，减少单次数据传输</li>        
+        </ul>
+
+        <h3>协同开发后端成员</h3>
+
+        <p>2024.9至今</p>
+
+        <ul>
+          <li>与4 名成员协同开发校园二手交易平台后端系统，负责用户、订单与商品模块接口设计与实现</li>
+          <li>针对商品列表高频访问导致数据库查询压力较大的问题，使用 Redis 缓存热点商品数据，减少重复 SQL 查询</li>
+          <li>针对多人协同开发过程中接口返回格式不统一的问题，设计统一返回体与全局异常处理机制，提高前后端联调效率</li>
+          <li>参与数据库表结构设计与接口文档制定，完成用户、商品、订单等核心业务表建模</li>
+          <li>使用 Git 进行分支管理与代码合并，处理多人协作下的代码冲突问题</li>
+          <li>使用 Postman 对接口进行联调与异常排查，定位并修复参数校验与空指针异常问题 </li>
+        </ul>
+          
+      </div>
+
+    </div>
+
+
+
+</body>

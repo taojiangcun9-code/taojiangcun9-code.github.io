@@ -1,0 +1,102 @@
+```css
+/* 清除默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 页面整体 */
+body {
+  font-family: "Microsoft YaHei", sans-serif;
+
+  background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+
+  color: white;
+
+  display: flex;
+
+  min-height: 100vh;
+}
+
+/* 左侧导航栏 */
+.sidebar {
+  width: 220px;
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  padding: 40px 20px;
+
+  background: rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-right: 1px solid rgba(255,255,255,0.15);
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* menu标题 */
+.sidebar h2 {
+  text-align: center;
+
+  margin-bottom: 40px;
+
+  font-size: 24px;
+
+  text-shadow: 0 0 6px rgba(255,255,255,0.3);
+}
+
+/* 导航链接 */
+.sidebar a {
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  margin-bottom: 25px;
+
+  transition: all 0.3s;
+}
+
+/* 右侧内容区域 */
+.content {
+  margin-left: 220px;
+
+  flex: 1;
+
+  padding: 80px;
+
+  display: flex;
+  
+  flex-direction: column;
+}
+
+/* 标题 */
+.content h1 {
+  font-size: 52px;
+
+  margin-bottom: 30px;
+
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* 段落 */
+.content p {
+  font-size: 20px;
+
+  line-height: 1.8;
+
+  color: rgba(255,255,255,0.85);
+
+  max-width: 800px;
+
+  margin-bottom: 20px;
+}

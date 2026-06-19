@@ -68,7 +68,7 @@ body {
 
 /* 主内容区域 */
 .content {
-  margin-left: 240px; /* 给sidebar留空间 */
+  margin-left: 480px; /* 给sidebar留空间 */
   padding: 40px;
   width: calc(100% - 240px);
 }

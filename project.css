@@ -65,3 +65,10 @@ body {
 
   transition: all 0.3s;
 }
+
+/* 主内容区域 */
+.content {
+  margin-left: 240px; /* 给sidebar留空间 */
+  padding: 40px;
+  width: calc(100% - 240px);
+}

@@ -1,4 +1,3 @@
-```css
 /* 清除默认样式 */
 * {
   margin: 0;
@@ -9,30 +8,22 @@
 /* 页面整体 */
 body {
   font-family: "Microsoft YaHei", sans-serif;
-
   background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
-
   color: white;
-
   display: flex;
-
   min-height: 100vh;
 }
 
 /* 左侧导航栏 */
 .sidebar {
   width: 220px;
-
   position: fixed;
-
   top: 0;
   left: 0;
   bottom: 0;
-
   padding: 40px 20px;
 
   background: rgba(0, 0, 0, 0.25);
-
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
@@ -45,30 +36,67 @@ body {
 /* menu标题 */
 .sidebar h2 {
   text-align: center;
-
   margin-bottom: 40px;
-
   font-size: 24px;
-
   text-shadow: 0 0 6px rgba(255,255,255,0.3);
 }
 
 /* 导航链接 */
 .sidebar a {
   color: white;
-
   text-decoration: none;
-
   font-size: 18px;
-
   margin-bottom: 25px;
-
   transition: all 0.3s;
 }
 
-/* 主内容区域 */
+/* hover效果 */
+.sidebar a:hover {
+  color: #fbbf24;
+  transform: translateX(8px);
+}
+
+/* ===== 右侧内容（你之前缺的关键）===== */
 .content {
-  margin-left: 480px; /* 给sidebar留空间 */
-  padding: 40px;
-  width: calc(100% - 240px);
+  margin-left: 220px;
+  padding: 50px;
+  width: 100%;
+}
+
+/* 卡片 */
+.card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  max-width: 900px;
+}
+
+.card h1 {
+  color: #fbbf24;
+  margin-bottom: 20px;
+}
+
+.card p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #e2e8f0;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background: #0ea5e9;
+  transform: translateY(-2px);
 }
